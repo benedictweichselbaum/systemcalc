@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="panelStart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartPage.CStartPage">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    <RowConstraints />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" prefHeight="37.0" prefWidth="451.0" text="Zahlensystemrechner" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbBinary" mnemonicParsing="false" text="Binär" GridPane.rowIndex="4" />
+      <RadioButton fx:id="rbOctal" mnemonicParsing="false" text="Oktal" GridPane.rowIndex="5" />
+      <RadioButton fx:id="rbDicimal" mnemonicParsing="false" text="Dezimal" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <RadioButton fx:id="rbHex" mnemonicParsing="false" text="Hexadezimal" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label alignment="CENTER" prefHeight="27.0" prefWidth="315.0" text="Zahlensystem der Zahl?" GridPane.rowIndex="3" />
+      <Button fx:id="btnContinue" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnActionContinue" prefHeight="39.0" prefWidth="174.0" text="Weiter" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextField fx:id="txtNumber" GridPane.rowIndex="7" />
+      <Label alignment="CENTER" prefHeight="27.0" prefWidth="313.0" text="Wie lautet deine Zahl?" GridPane.rowIndex="6" />
+      <MenuBar fx:id="mbTopStart" prefHeight="39.0" prefWidth="474.0" GridPane.halignment="CENTER">
+        <menus>
+          <Menu fx:id="mbItemAbout" mnemonicParsing="false" text="Über das Tool">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</GridPane>
